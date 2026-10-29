@@ -12,6 +12,7 @@ int main(void) {
 	srand(time(0));
 	int myArray[10];
 
+	// Every random integer
 	cout << "The random integers: ";
 	for (int i = 0; i < 10; i++) {
 		do {
@@ -19,8 +20,13 @@ int main(void) {
 		} while (!((1000 <= myArray[i]) && (9999 >= myArray[i])));
 	cout << myArray[i] << " ";
 	}
+	cout << endl;
 	
-
+	// Every element at an even index
+	cout << "Even indices: ";
+	for (int i = 0; i < 10; i++) {
+		cout << myArray[i] + 2 << " ";
+	}
 	cout << endl;
 	
 }
