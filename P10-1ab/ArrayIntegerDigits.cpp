@@ -24,8 +24,8 @@ int main(void) {
 	
 	// Every element at an even index
 	cout << "Even indices: ";
-	for (int i = 0; i < 10; i++) {
-		cout << myArray[i] + 2 << " ";
+	for (int i = 0; i < 10; i = i + 2) {
+		cout << myArray[i] << " ";
 	}
 	cout << endl;
 
@@ -35,5 +35,23 @@ int main(void) {
 		if ((myArray[i] % 10) % 2 == 0)
 			cout << myArray[i] << " ";
 	}
+	cout << endl;
+
+	// Reversed order
+	cout << "Reversed order: ";
+	for (int i = 9; i >= 0; i--) {
+		cout << myArray[i] << " ";
+	}
+	cout << endl;
+
+	// First and last:
+	cout << "First and last: ";
+	for (int i = 0; i < 1; i++) {
+			cout << myArray[i] << " ";
+	}
+	for (int i = 9; i < 10; i++) {
+		cout << myArray[i];
+	}
+	cout << endl;
 	
 }
